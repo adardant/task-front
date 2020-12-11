@@ -1,0 +1,13 @@
+.task {
+  border: 2px solid rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+  text-align: center;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px;
+}

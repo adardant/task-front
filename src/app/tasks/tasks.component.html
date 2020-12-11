@@ -1,0 +1,5 @@
+<div class='task' *ngFor="let task of tasks">
+  <p class='taskd'>{{ task.date }}</p>
+  <p class='taskd'>{{ task.description }}</p>
+  <button (click)="delete(task._id)">Supprimer</button>
+</div>
