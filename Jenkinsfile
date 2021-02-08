@@ -1,9 +1,17 @@
 pipeline {  //execute le pipeline sur le premier noeu jenkins dispo
   agent any  //exe le pipeline ou le stage sur nimp quel noeu jenkins dispo
   tools{
-    nodejs 'default-nodejs'
+    nodejs 'node'
   }
+
   stages{
+    stage("config"){
+      steps{
+        script{
+          sh 'npm config ls'
+        }
+      }
+    }
     stage("start"){
       steps{
         script{
